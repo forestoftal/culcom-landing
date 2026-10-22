@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>컬컴 건대점 · 영어회화 스터디</title>
+<meta name="description" content="건대에서 2시간 동안 한국어 없이. 레벨별 그룹으로 나눠 앉는 영어회화 스터디.">
+<meta name="theme-color" content="#DA222A">
+<meta property="og:title" content="컬컴 건대점 · 영어회화 스터디">
+<meta property="og:description" content="2시간 동안 한국어 없이, 레벨별 그룹으로. 무료 레벨테스트 받고 결정하세요.">
+<meta property="og:image" content="./images/class.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="./images/logo.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<style>
+  :root{
+    --red:#DA222A;
+    --red-deep:#A2151C;
+    --red-tint:#FDF2F2;
+    --ink:#14110F;
+    --text:#413B37;
+    --soft:#77706B;
+    --hair:#ECE7E3;
+    --bg:#FFFFFF;
+    --max:480px;
+    --pad:22px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+    background:var(--bg); color:var(--text);
+    line-height:1.62; letter-spacing:-0.02em;
+    font-size:16px; word-break:keep-all; overflow-wrap:break-word;
+  }
+  .wrap{width:100%; max-width:var(--max); margin:0 auto; padding:0 var(--pad);}
+  img{display:block; max-width:100%;}
+
+  /* ── hero ── */
+  .hero{padding:32px 0 30px; text-align:center;}
+  .hero__logo{width:104px; margin:0 auto 18px;}
+  .eyebrow{
+    display:inline-block; font-size:12px; font-weight:700; letter-spacing:0.05em;
+    color:var(--red); background:var(--red-tint);
+    padding:6px 12px; border-radius:100px; margin-bottom:14px;
+  }
+  .place{
+    font-size:42px; line-height:1.1; font-weight:800; color:var(--ink);
+    letter-spacing:-0.045em; margin-bottom:12px;
+  }
+  .place em{font-style:normal; color:var(--red); display:block; font-size:50px;}
+  .hero h1{
+    font-size:20px; line-height:1.4; font-weight:700; color:var(--ink);
+    letter-spacing:-0.03em; margin-bottom:6px;
+  }
+  .hero p{font-size:15px; color:var(--soft); line-height:1.6;}
+
+  .photo{
+    margin:22px 0 0; border-radius:18px; overflow:hidden;
+    box-shadow:0 8px 28px rgba(20,17,15,.14);
+  }
+  .photo img{width:100%; height:auto;}
+
+  /* ── cta ── */
+  .cta{
+    display:block; width:100%; background:var(--red); color:#fff;
+    text-decoration:none; font-size:16.5px; font-weight:700; letter-spacing:-0.025em;
+    padding:17px 16px; border-radius:14px; text-align:center;
+    box-shadow:0 6px 18px rgba(218,34,42,.28);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .cta:active{transform:translateY(1px); box-shadow:0 3px 10px rgba(218,34,42,.24);}
+  .cta:focus-visible,
+  footer a:focus-visible{outline:3px solid rgba(218,34,42,.28); outline-offset:4px;}
+  .cta span{display:block; font-size:12.5px; font-weight:500; opacity:.9; margin-top:3px; letter-spacing:0;}
+  .cta--hero{margin-top:22px;}
+
+  /* ── sections ── */
+  section{padding:36px 0;}
+  section + section{border-top:1px solid var(--hair);}
+  h2{
+    font-size:21px; line-height:1.4; font-weight:800; color:var(--ink);
+    letter-spacing:-0.03em; margin-bottom:20px;
+  }
+  h2 .q{color:var(--red);}
+
+  /* ── pain checklist ── */
+  .check{list-style:none;}
+  .check li{
+    position:relative; padding:13px 0 13px 28px;
+    font-size:15.5px; color:var(--text); line-height:1.5;
+  }
+  .check li + li{border-top:1px solid var(--hair);}
+  .check li::before{
+    content:""; position:absolute; left:3px; top:19px;
+    width:7px; height:7px; border-radius:50%; background:var(--red);
+  }
+
+  /* ── reasons ── */
+  .reason{padding:20px 0;}
+  .reason:first-of-type{padding-top:0;}
+  .reason + .reason{border-top:1px dashed var(--hair);}
+  .reason__k{
+    display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:0.02em;
+    color:var(--red); background:var(--red-tint);
+    padding:4px 10px; border-radius:6px; margin-bottom:10px;
+  }
+  .reason__t{
+    font-size:17.5px; font-weight:800; color:var(--ink);
+    letter-spacing:-0.03em; line-height:1.4; margin-bottom:8px;
+  }
+  .reason__d{font-size:15px; color:var(--text); line-height:1.6;}
+  .chips{display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;}
+  .chips span{
+    font-size:11.5px; color:var(--soft); background:#F7F5F3;
+    border:1px solid var(--hair); border-radius:100px; padding:4px 10px;
+    letter-spacing:-0.01em; white-space:nowrap;
+  }
+
+  /* ── trust strip ── */
+  .trust{
+    display:flex; justify-content:center; gap:20px; flex-wrap:wrap;
+    padding:16px 0; border-top:1px solid var(--hair);
+    font-size:12.5px; color:#A8A19B;
+  }
+  .trust b{color:var(--soft); font-weight:700;}
+
+  /* ── closing ── */
+  .closing{text-align:center; padding:38px 0 34px;}
+  .closing h2{margin-bottom:10px;}
+  .closing p{font-size:15px; color:var(--soft); line-height:1.6; margin-bottom:22px;}
+
+  /* ── footer ── */
+  footer{
+    padding:24px 0 40px; text-align:center;
+    font-size:12.5px; color:#A8A19B; line-height:1.75; border-top:1px solid var(--hair);
+  }
+  footer strong{color:var(--soft); font-weight:600;}
+  footer a{color:inherit; text-decoration:none;}
+
+  @media (max-width:359px){
+    :root{--pad:18px;}
+    .place{font-size:36px;}
+    .place em{font-size:43px;}
+    .hero h1{font-size:18.5px;}
+    .cta{font-size:15.5px;}
+  }
+  @media (min-width:481px){
+    body{background:#F6F3F1;}
+    .page{max-width:var(--max); margin:0 auto; background:#fff; min-height:100vh;
+          box-shadow:0 0 40px rgba(20,17,15,.07);}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="hero wrap">
+    <img class="hero__logo" src="./images/logo.png" alt="CulCom">
+    <div class="eyebrow">영어회화 스터디</div>
+    <div class="place">컬컴<em>건대점</em></div>
+    <h1>여기서는 영어만 씁니다</h1>
+    <p>2시간 동안 한국어 없이,<br>레벨별 그룹으로 나눠 앉습니다.</p>
+    <div class="photo">
+      <img src="./images/class.jpg" alt="컬컴 건대점 스터디 현장" loading="eager">
+    </div>
+    <a class="cta cta--hero" href="https://pf-link.kakao.com/qr/_xeMISK/pages/_Hxh?query=state=konkuk,carrotss1">
+      무료 레벨테스트 · 상담 받기
+      <span>카카오톡으로 1분이면 끝나요</span>
+    </a>
+  </header>
+
+  <section class="wrap">
+    <h2>혹시 이 중에 하나라도<br><span class="q">해당되시나요?</span></h2>
+    <ul class="check">
+      <li>단어는 아는데 막상 입이 안 떨어지는 분</li>
+      <li>영어학원 등록해놓고 세 번 가고 만 분</li>
+      <li>혼자 공부하다 매번 흐지부지된 분</li>
+      <li>시험 점수는 있는데 사람 앞에서는 안 되는 분</li>
+      <li>영어 쓸 일이 없어서 다 까먹고 있는 분</li>
+    </ul>
+  </section>
+
+  <section class="wrap">
+    <h2>건대점, <span class="q">이런 점이 좋아요</span></h2>
+
+    <div class="reason">
+      <div class="reason__k">함께 앉는 사람들</div>
+      <div class="reason__t">연령대도, 하는 일도 전부 다릅니다</div>
+      <div class="reason__d">
+        그래서 스터디 주제가 깊게 들어가요. 영어만 연습하고 끝나는 자리가 아니라,
+        서로의 일과 경험에서 배워 가는 자리입니다. 여기서 만든 인연이 오래 가는 이유예요.
+      </div>
+      <div class="chips">
+        <span>컨설턴트</span><span>개발자</span><span>마케터</span>
+        <span>비즈니스 오너</span><span>VC</span><span>의사</span>
+      </div>
+    </div>
+
+    <div class="reason">
+      <div class="reason__k">먼저 다녀온 사람들</div>
+      <div class="reason__t">유학·워홀·교환학생, 준비하는 사람과<br>다녀온 사람이 같이 앉습니다</div>
+      <div class="reason__d">
+        준비 중인 멤버도, 이미 다녀온 멤버도 많아요.
+        궁금한 건 검색하지 말고 옆자리에 바로 물어보세요.
+        지금도 많은 멤버가 그렇게 같이 준비하고 있습니다.
+      </div>
+      <div class="chips">
+        <span>유학 준비</span><span>유학생</span><span>워홀 준비</span>
+        <span>워홀 경험자</span><span>교환학생</span>
+      </div>
+    </div>
+
+    <div class="reason">
+      <div class="reason__k">제대로 된 커리큘럼</div>
+      <div class="reason__t">목적에 맞는 회화 공부를 합니다</div>
+      <div class="reason__d">
+        레벨이 세분화되어 있어서 레벨별 그룹으로 나눠 앉고, 그룹마다 맞는 커리큘럼과 자체 교재가 있어요.
+        테이블마다 리더가 대화를 이끌고 외국인 리더도 있어서,
+        그냥 수다로 끝나지 않고 본인 목적에 맞게 공부가 됩니다.
+      </div>
+    </div>
+  </section>
+
+  <div class="trust wrap">
+    <div><b>2004년</b>부터 운영</div>
+    <div>전국 <b>40개</b> 지점</div>
+  </div>
+
+  <section class="closing wrap">
+    <h2>일단 <span class="q">무료</span>로 확인해보세요</h2>
+    <p>레벨테스트와 상담을 먼저 받아보고,<br>맞을 것 같을 때 시작하셔도 됩니다.</p>
+    <a class="cta" href="https://pf-link.kakao.com/qr/_xeMISK/pages/_Hxh?query=state=konkuk,carrotss1">
+      무료 레벨테스트 및 더 알아보기
+    </a>
+  </section>
+
+  <footer class="wrap">
+    <strong>컬컴 건대점</strong><br>
+    문의 <a href="tel:010-5715-0553" aria-label="컬컴 건대점에 전화하기">010-5715-0553</a><br>
+    평일 11:00–21:00 · 일요일 11:00–15:00
+  </footer>
+
+</div>
+</body>
+</html>
